@@ -1,0 +1,41 @@
+# Dependencias 
+node_modules/
+jspm_packages/
+web_modules/
+
+# Archivos de Compilación, Distribución y Producción
+dist/
+build/
+.next/
+.nuxt/
+out/
+
+# Archivos de Configuración Local y Secretos (¡CRÍTICO!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.env.local
+
+# Logs y Debugs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+
+# Configuración de editores (VS Code / JetBrains / etc)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+
+# Cobertura de pruebas (Testing)
+coverage/
+.nyc_output/
