@@ -7,11 +7,13 @@ var app = express();
 //middlewares
 app.use(express.json());
 app.use(cors({origin: 'http://localhost:4200'}));
+
 //Cargamos el modulo de direccionamiento de rutas
-//app.use('/api/agente', require('./src/routes/agente.route.js'));
-//app.use('/api/sector', require('./src/routes/sector.route'));
+app.use('/api/socio', require('./src/routes/socio.route'));
+
 //setting
 app.set('port', process.env.PORT || 3000);
+
 // Sincronizar Base de Datos y arrancar el servidor
 // .sync() crea las tablas automáticamente en Postgres si aún no existen
 // force en false crea las tablas solo si no existe, no borra datos en cada inicio
