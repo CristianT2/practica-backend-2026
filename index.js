@@ -10,6 +10,7 @@ app.use(cors({origin: 'http://localhost:4200'}));
 
 //Cargamos el modulo de direccionamiento de rutas
 app.use('/api/socio', require('./src/routes/socio.route'));
+app.use('/api/transaccion', require('./src/routes/transaccion.route'));
 
 //setting
 app.set('port', process.env.PORT || 3000);
